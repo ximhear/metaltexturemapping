@@ -42,7 +42,8 @@ class Renderer: NSObject, MTKViewDelegate {
     var rotation: Float = 0
     
     var texture: MTLTexture?
-    
+    var texture1: MTLTexture?
+
     init?(metalKitView: MTKView) {
         self.device = metalKitView.device!
         guard let queue = self.device.makeCommandQueue() else { return nil }
@@ -81,6 +82,7 @@ class Renderer: NSObject, MTKViewDelegate {
         let descriptior = MTLTextureDescriptor.texture2DDescriptor(pixelFormat: MTLPixelFormat.rgba8Unorm, width: 1024, height: 1024, mipmapped: false)
         
         texture = try? Renderer.loadTexture(device: device, textureName: "aaa")
+        texture1 = try? Renderer.loadTexture(device: device, textureName: "bbb")
 
 
         super.init()
@@ -252,11 +254,31 @@ class Renderer: NSObject, MTKViewDelegate {
                 renderEncoder.setVertexBytes(vertices, length: MemoryLayout<Float>.stride * 5 * 4 * 4, index: 0)
                 renderEncoder.setFragmentTexture(texture, index: 0)
                 renderEncoder.drawIndexedPrimitives(type: .triangle,
-                                                    indexCount: 24,
+                                                    indexCount: 6,
                                                     indexType: .uint16,
                                                     indexBuffer: indexBuffer!,
                                                     indexBufferOffset: 0)
+                
+                renderEncoder.setFragmentTexture(texture1, index: 0)
+                renderEncoder.drawIndexedPrimitives(type: .triangle,
+                                                    indexCount: 6,
+                                                    indexType: .uint16,
+                                                    indexBuffer: indexBuffer!,
+                                                    indexBufferOffset: MemoryLayout<UInt16>.stride * 6)
 
+                renderEncoder.setFragmentTexture(texture1, index: 0)
+                renderEncoder.drawIndexedPrimitives(type: .triangle,
+                                                    indexCount: 6,
+                                                    indexType: .uint16,
+                                                    indexBuffer: indexBuffer!,
+                                                    indexBufferOffset: MemoryLayout<UInt16>.stride * 12)
+
+                renderEncoder.setFragmentTexture(texture, index: 0)
+                renderEncoder.drawIndexedPrimitives(type: .triangle,
+                                                    indexCount: 6,
+                                                    indexType: .uint16,
+                                                    indexBuffer: indexBuffer!,
+                                                    indexBufferOffset: MemoryLayout<UInt16>.stride * 18)
                 renderEncoder.popDebugGroup()
                 
                 renderEncoder.endEncoding()
