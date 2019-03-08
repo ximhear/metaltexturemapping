@@ -82,8 +82,8 @@ class Renderer: NSObject, MTKViewDelegate {
         let descriptior = MTLTextureDescriptor.texture2DDescriptor(pixelFormat: MTLPixelFormat.rgba8Unorm, width: 1024, height: 1024, mipmapped: false)
         
         texture = try? Renderer.loadTexture(device: device, textureName: "aaa")
-        texture1 = try? Renderer.loadTexture(device: device, textureName: "bbb")
-
+//        texture1 = try? Renderer.loadTexture(device: device, textureName: "bbb")
+        texture1 = GTextureLoader.default.texture2DWithImage(named: "ccc", mipmapped: false, commandQueue: queue)
 
         super.init()
         

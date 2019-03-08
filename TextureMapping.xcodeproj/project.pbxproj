@@ -22,6 +22,10 @@
 		EC2FF09722187DAB00859946 /* ShaderTypes.h in Resources */ = {isa = PBXBuildFile; fileRef = EC2FF07022187DAA00859946 /* ShaderTypes.h */; };
 		EC2FF09822187DAB00859946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC2FF07122187DAB00859946 /* Assets.xcassets */; };
 		EC2FF09922187DAB00859946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC2FF07122187DAB00859946 /* Assets.xcassets */; };
+		ECFA4BE122322F9F00CC7AFE /* GTextureLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFA4BE022322F9F00CC7AFE /* GTextureLoader.swift */; };
+		ECFA4BF722323A7700CC7AFE /* ccc.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFA4BF622323A7700CC7AFE /* ccc.png */; };
+		ECFA4BF822323A7700CC7AFE /* ccc.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFA4BF622323A7700CC7AFE /* ccc.png */; };
+		ECFA4BF922323AB500CC7AFE /* GTextureLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFA4BE022322F9F00CC7AFE /* GTextureLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,8 @@
 		EC2FF08C22187DAB00859946 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		EC2FF08F22187DAB00859946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC2FF09122187DAB00859946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECFA4BE022322F9F00CC7AFE /* GTextureLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTextureLoader.swift; sourceTree = "<group>"; };
+		ECFA4BF622323A7700CC7AFE /* ccc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccc.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +79,12 @@
 		EC2FF06D22187DAA00859946 /* Blending Shared */ = {
 			isa = PBXGroup;
 			children = (
+				ECFA4BF622323A7700CC7AFE /* ccc.png */,
 				EC2FF06E22187DAA00859946 /* Shaders.metal */,
 				EC2FF06F22187DAA00859946 /* Renderer.swift */,
 				EC2FF07022187DAA00859946 /* ShaderTypes.h */,
 				EC2FF07122187DAB00859946 /* Assets.xcassets */,
+				ECFA4BE022322F9F00CC7AFE /* GTextureLoader.swift */,
 			);
 			path = "Blending Shared";
 			sourceTree = "<group>";
@@ -195,6 +203,7 @@
 				EC2FF09622187DAB00859946 /* ShaderTypes.h in Resources */,
 				EC2FF07F22187DAB00859946 /* Main.storyboard in Resources */,
 				EC2FF09822187DAB00859946 /* Assets.xcassets in Resources */,
+				ECFA4BF722323A7700CC7AFE /* ccc.png in Resources */,
 				EC2FF08222187DAB00859946 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +215,7 @@
 				EC2FF09022187DAB00859946 /* Main.storyboard in Resources */,
 				EC2FF09922187DAB00859946 /* Assets.xcassets in Resources */,
 				EC2FF09722187DAB00859946 /* ShaderTypes.h in Resources */,
+				ECFA4BF822323A7700CC7AFE /* ccc.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC2FF09422187DAB00859946 /* Renderer.swift in Sources */,
+				ECFA4BE122322F9F00CC7AFE /* GTextureLoader.swift in Sources */,
 				EC2FF09222187DAB00859946 /* Shaders.metal in Sources */,
 				EC2FF07C22187DAB00859946 /* GameViewController.swift in Sources */,
 				EC2FF07A22187DAB00859946 /* AppDelegate.swift in Sources */,
@@ -228,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC2FF09522187DAB00859946 /* Renderer.swift in Sources */,
+				ECFA4BF922323AB500CC7AFE /* GTextureLoader.swift in Sources */,
 				EC2FF09322187DAB00859946 /* Shaders.metal in Sources */,
 				EC2FF08D22187DAB00859946 /* GameViewController.swift in Sources */,
 				EC2FF08B22187DAB00859946 /* AppDelegate.swift in Sources */,
