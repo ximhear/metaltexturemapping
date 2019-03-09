@@ -209,7 +209,7 @@ class Renderer: NSObject, MTKViewDelegate {
                 
                 renderEncoder.pushDebugGroup("Draw Box")
                 
-                renderEncoder.setCullMode(.none)
+                renderEncoder.setCullMode(.back)
                 
                 renderEncoder.setFrontFacing(.counterClockwise)
                 
