@@ -33,13 +33,13 @@
 		EC2FF06F22187DAA00859946 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		EC2FF07022187DAA00859946 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
 		EC2FF07122187DAB00859946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EC2FF07622187DAB00859946 /* Blending.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blending.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2FF07622187DAB00859946 /* TextureMapping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextureMapping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC2FF07922187DAB00859946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC2FF07B22187DAB00859946 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		EC2FF07E22187DAB00859946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC2FF08122187DAB00859946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC2FF08322187DAB00859946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC2FF08822187DAB00859946 /* Blending.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blending.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2FF08822187DAB00859946 /* TextureMapping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextureMapping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC2FF08A22187DAB00859946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC2FF08C22187DAB00859946 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		EC2FF08F22187DAB00859946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,14 +69,14 @@
 		EC2FF06822187DAA00859946 = {
 			isa = PBXGroup;
 			children = (
-				EC2FF06D22187DAA00859946 /* Blending Shared */,
-				EC2FF07822187DAB00859946 /* Blending iOS */,
-				EC2FF08922187DAB00859946 /* Blending macOS */,
+				EC2FF06D22187DAA00859946 /* TextureMapping Shared */,
+				EC2FF07822187DAB00859946 /* TextureMapping iOS */,
+				EC2FF08922187DAB00859946 /* TextureMapping macOS */,
 				EC2FF07722187DAB00859946 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EC2FF06D22187DAA00859946 /* Blending Shared */ = {
+		EC2FF06D22187DAA00859946 /* TextureMapping Shared */ = {
 			isa = PBXGroup;
 			children = (
 				ECFA4BF622323A7700CC7AFE /* ccc.png */,
@@ -86,19 +86,19 @@
 				EC2FF07122187DAB00859946 /* Assets.xcassets */,
 				ECFA4BE022322F9F00CC7AFE /* GTextureLoader.swift */,
 			);
-			path = "Blending Shared";
+			path = "TextureMapping Shared";
 			sourceTree = "<group>";
 		};
 		EC2FF07722187DAB00859946 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EC2FF07622187DAB00859946 /* Blending.app */,
-				EC2FF08822187DAB00859946 /* Blending.app */,
+				EC2FF07622187DAB00859946 /* TextureMapping.app */,
+				EC2FF08822187DAB00859946 /* TextureMapping.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EC2FF07822187DAB00859946 /* Blending iOS */ = {
+		EC2FF07822187DAB00859946 /* TextureMapping iOS */ = {
 			isa = PBXGroup;
 			children = (
 				EC2FF07922187DAB00859946 /* AppDelegate.swift */,
@@ -107,10 +107,10 @@
 				EC2FF08022187DAB00859946 /* LaunchScreen.storyboard */,
 				EC2FF08322187DAB00859946 /* Info.plist */,
 			);
-			path = "Blending iOS";
+			path = "TextureMapping iOS";
 			sourceTree = "<group>";
 		};
-		EC2FF08922187DAB00859946 /* Blending macOS */ = {
+		EC2FF08922187DAB00859946 /* TextureMapping macOS */ = {
 			isa = PBXGroup;
 			children = (
 				EC2FF08A22187DAB00859946 /* AppDelegate.swift */,
@@ -118,15 +118,15 @@
 				EC2FF08E22187DAB00859946 /* Main.storyboard */,
 				EC2FF09122187DAB00859946 /* Info.plist */,
 			);
-			path = "Blending macOS";
+			path = "TextureMapping macOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EC2FF07522187DAB00859946 /* Blending iOS */ = {
+		EC2FF07522187DAB00859946 /* TextureMapping iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC2FF09C22187DAB00859946 /* Build configuration list for PBXNativeTarget "Blending iOS" */;
+			buildConfigurationList = EC2FF09C22187DAB00859946 /* Build configuration list for PBXNativeTarget "TextureMapping iOS" */;
 			buildPhases = (
 				EC2FF07222187DAB00859946 /* Sources */,
 				EC2FF07322187DAB00859946 /* Frameworks */,
@@ -136,14 +136,14 @@
 			);
 			dependencies = (
 			);
-			name = "Blending iOS";
-			productName = "Blending iOS";
-			productReference = EC2FF07622187DAB00859946 /* Blending.app */;
+			name = "TextureMapping iOS";
+			productName = "TextureMapping iOS";
+			productReference = EC2FF07622187DAB00859946 /* TextureMapping.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EC2FF08722187DAB00859946 /* Blending macOS */ = {
+		EC2FF08722187DAB00859946 /* TextureMapping macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC2FF09F22187DAB00859946 /* Build configuration list for PBXNativeTarget "Blending macOS" */;
+			buildConfigurationList = EC2FF09F22187DAB00859946 /* Build configuration list for PBXNativeTarget "TextureMapping macOS" */;
 			buildPhases = (
 				EC2FF08422187DAB00859946 /* Sources */,
 				EC2FF08522187DAB00859946 /* Frameworks */,
@@ -153,9 +153,9 @@
 			);
 			dependencies = (
 			);
-			name = "Blending macOS";
-			productName = "Blending macOS";
-			productReference = EC2FF08822187DAB00859946 /* Blending.app */;
+			name = "TextureMapping macOS";
+			productName = "TextureMapping macOS";
+			productReference = EC2FF08822187DAB00859946 /* TextureMapping.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -189,8 +189,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EC2FF07522187DAB00859946 /* Blending iOS */,
-				EC2FF08722187DAB00859946 /* Blending macOS */,
+				EC2FF07522187DAB00859946 /* TextureMapping iOS */,
+				EC2FF08722187DAB00859946 /* TextureMapping macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -392,16 +392,16 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WD3LPJ2STX;
-				INFOPLIST_FILE = "Blending iOS/Info.plist";
+				INFOPLIST_FILE = "TextureMapping iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = g.TextureMapping;
-				PRODUCT_NAME = Blending;
+				PRODUCT_NAME = TextureMapping;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "Blending Shared/ShaderTypes.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TextureMapping Shared/ShaderTypes.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -414,16 +414,16 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WD3LPJ2STX;
-				INFOPLIST_FILE = "Blending iOS/Info.plist";
+				INFOPLIST_FILE = "TextureMapping iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = g.TextureMapping;
-				PRODUCT_NAME = Blending;
+				PRODUCT_NAME = TextureMapping;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "Blending Shared/ShaderTypes.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TextureMapping Shared/ShaderTypes.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -438,16 +438,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = WD3LPJ2STX;
-				INFOPLIST_FILE = "Blending macOS/Info.plist";
+				INFOPLIST_FILE = "TextureMapping macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = g.Blending;
-				PRODUCT_NAME = Blending;
+				PRODUCT_BUNDLE_IDENTIFIER = g.TextureMapping;
+				PRODUCT_NAME = TextureMapping;
 				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "Blending Shared/ShaderTypes.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TextureMapping Shared/ShaderTypes.h";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -460,16 +460,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = WD3LPJ2STX;
-				INFOPLIST_FILE = "Blending macOS/Info.plist";
+				INFOPLIST_FILE = "TextureMapping macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = g.Blending;
-				PRODUCT_NAME = Blending;
+				PRODUCT_BUNDLE_IDENTIFIER = g.TextureMapping;
+				PRODUCT_NAME = TextureMapping;
 				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "Blending Shared/ShaderTypes.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TextureMapping Shared/ShaderTypes.h";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
@@ -486,7 +486,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC2FF09C22187DAB00859946 /* Build configuration list for PBXNativeTarget "Blending iOS" */ = {
+		EC2FF09C22187DAB00859946 /* Build configuration list for PBXNativeTarget "TextureMapping iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC2FF09D22187DAB00859946 /* Debug */,
@@ -495,7 +495,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC2FF09F22187DAB00859946 /* Build configuration list for PBXNativeTarget "Blending macOS" */ = {
+		EC2FF09F22187DAB00859946 /* Build configuration list for PBXNativeTarget "TextureMapping macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC2FF0A022187DAB00859946 /* Debug */,

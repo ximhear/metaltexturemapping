@@ -1,6 +1,6 @@
 //
 //  GTextureLoader.swift
-//  Blending iOS
+//  TextureMapping iOS
 //
 //  Created by gzonelee on 08/03/2019.
 //  Copyright © 2019 LEE CHUL HYUN. All rights reserved.

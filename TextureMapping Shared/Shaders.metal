@@ -1,6 +1,6 @@
 //
 //  Shaders.metal
-//  Blending Shared
+//  TextureMapping Shared
 //
 //  Created by LEE CHUL HYUN on 2/17/19.
 //  Copyright © 2019 LEE CHUL HYUN. All rights reserved.
