@@ -147,10 +147,10 @@ class Renderer: NSObject, MTKViewDelegate {
         /// Load texture data with optimal parameters for sampling
         
         let textureLoader = MTKTextureLoader(device: device)
-        
-        let textureLoaderOptions = [
+        let textureLoaderOptions: [MTKTextureLoader.Option : Any] = [
             MTKTextureLoader.Option.textureUsage: NSNumber(value: MTLTextureUsage.shaderRead.rawValue),
-            MTKTextureLoader.Option.textureStorageMode: NSNumber(value: MTLStorageMode.`private`.rawValue)
+            MTKTextureLoader.Option.textureStorageMode: NSNumber(value: MTLStorageMode.`private`.rawValue),
+//            MTKTextureLoader.Option.origin: MTKTextureLoader.Origin.topLeft
         ]
         
         return try textureLoader.newTexture(name: textureName,
@@ -231,10 +231,10 @@ class Renderer: NSObject, MTKViewDelegate {
                     0, -1, 0,          1, 1,
                     0, 0, 0,           1, 0,
 
-                    0, 0, 0,          0, 0,
-                    0, -1, 0,         0, 1,
-                    1, -1, 0,          1, 1,
-                    1, 0, 0,           1, 0,
+                    0, 0, 0,          0, 1,
+                    0, -1, 0,         0, 0,
+                    1, -1, 0,          1, 0,
+                    1, 0, 0,           1, 1,
 
                     0, 1, 0,          0, 0,
                     0, 0, 0,         0, 1,
