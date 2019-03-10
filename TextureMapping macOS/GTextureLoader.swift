@@ -72,8 +72,8 @@ class GTextureLoader {
                                            space: space,
                                            bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue | CGBitmapInfo.byteOrder32Big.rawValue)
         
-        context?.translateBy(x: 0, y: CGFloat(height))
-        context?.scaleBy(x: 1, y: -1)
+//        context?.translateBy(x: 0, y: CGFloat(height))
+//        context?.scaleBy(x: 1, y: -1)
 
         context?.draw(imageRef, in: imageRect)
         
